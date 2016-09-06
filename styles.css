@@ -3,5 +3,36 @@
   padding: 0px;
   background: darkslategray;
   color: white;
-  font-family: Arial;
+  font-family: Tahoma, sans-serif;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: darkslategray;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.space {
+  margin: 10px;
+  padding: 5px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
 }

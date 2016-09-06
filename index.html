@@ -5,7 +5,26 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<h1>Project Set Up</h1>
-<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+  <div class="space center">
+    <h2>Now You See, Now You Don't</h2>
+  </div>
+
+  <!-- Textarea for input and Create button -->
+  <div class="space center">
+    <h4>Your Message:</h4>
+    <div class="input-container">
+        <textarea id="input-field" placeholder="Type here to add a message and create your card."></textarea>
+        <button class="button" id="create">Create</button>
+    </div>
+  </div>
+
+  <!-- Card Area -->
+  <div class="space center">
+    <h4>Your Cards:</h4>
+    <div id="card-output"></div>
+  </div>
+
+  <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
