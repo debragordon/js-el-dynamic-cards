@@ -1,3 +1,18 @@
-// Create an HTML page that contains a text area and a button labeled Create.
-// When the user enters in text into the text area and then clicks the create button, create a new card element in the DOM. You decide the height/width of the card.
-// When the user clicks the Delete button, the containing card, and no other cards, should then be removed from the DOM. Not just made invisible, actually removed from the DOM.
+var userInput;
+var userInputField = document.getElementById("user-input");
+var createButton = document.getElementById("create-card");
+var outputArea = document.getElementById("card-output");
+
+createButton.addEventListener("click", function (event) {
+  userInput = document.getElementById("user-input").value;
+  outputArea.innerHTML += "<article>" + userInput + "<button id='delete-this'>Delete</button>" + "</article>";
+  userInputField.value = "";
+  console.log(userInput);
+});
+
+outputArea.addEventListener("click", function(event) {
+  if (event.target.id === "delete-this") {
+    toDelete = event.target.parentNode;
+    outputArea.removeChild(toDelete);
+  };
+});
